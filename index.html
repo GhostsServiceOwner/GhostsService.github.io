@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost's Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #001f3f, #0074d9);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-shadow: 0 0 10px #0074d9, 0 0 20px #0074d9;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #0074d9;
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px #0074d9;
+        }
+
+        .service h2 {
+            text-shadow: 0 0 10px #0074d9;
+            font-size: 1.8em;
+        }
+
+        .service .download-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background: #0074d9;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .service .download-button:hover {
+            background: #005fa3;
+        }
+
+        .notify {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .notify input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            outline: none;
+        }
+
+        .notify button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background: #0074d9;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .notify button:hover {
+            background: #005fa3;
+        }
+
+        .about {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2em;
+            text-shadow: 0 0 10px #0074d9;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-item {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #0074d9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px #0074d9;
+        }
+
+        .contact-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #0074d9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ghost's Services</h1>
+        <p>Best free cheats (donations appreciated)</p>
+    </header>
+
+    <section class="services">
+        <div class="service">
+            <h2>cs2 cheats</h2>
+            <p>Read below for more info about the whole cheat</p>
+            <a class="download-button" href="cs2_cheats.exe" download>Download</a>
+        </div>
+        <div class="service">
+            <h2>Valo Cheats</h2>
+            <p>coming soon...</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Ghost's Services</h2>
+        <p>At Ghost's service we make free cheats for games like cs2 and we are working hard on Valo cheats for now but we can promise that it will release soon...</p>
+    </section>
+
+    <section class="notify">
+        <h2>Notify Me</h2>
+        <p>Want to be notified when Valo cheats come out? Type below:</p>
+        <form>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Notify Me</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ghost's Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
